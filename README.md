@@ -26,18 +26,22 @@ It wrote the code, ran away, and now the game is unplayable.
 ## 📝 Document Your Experience
 
 - [ ] Describe the game's purpose.
+The games purpose is to test the player to guess the correct number
 - [ ] Detail which bugs you found.
+The attempt left bug, where inconcistant number of tries were displayed. 
+The guess hint bug that incorrectly displayed where the guess was in correlation to the secret number.
+And the new game bug, where the game didn't refresh correctly to create the new game.
 - [ ] Explain what fixes you applied.
 
 ## 📸 Demo Walkthrough
 
 Describe your fixed game in numbered steps so a reader can follow along without watching a video:
 
-1. <!-- Describe this step -->
-2. <!-- Describe this step -->
-3. <!-- Describe this step -->
-4. <!-- Describe this step -->
-5. <!-- Add more steps as needed -->
+1. User enters a guess of 10
+2. Game returns "Too Low"
+3. User enters a guess of 50 -> "Too High"
+4. Score updates correctly after each guess
+5. Game ends after the correct guess
 
 **Screenshot** *(optional)*: <!-- Insert a screenshot of your fixed, winning game here -->
 
@@ -47,7 +51,7 @@ Describe your fixed game in numbered steps so a reader can follow along without 
 # Paste your pytest output here, e.g.:
 # pytest tests/
 # ========================= X passed in 0.XXs =========================
-```
+```3 passed in 0.04s
 
 ## 🚀 Stretch Features
 
